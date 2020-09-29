@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://danobot.github.io/notorious-landing/precache-manifest.597d890f5a891c1b8525a01058bcb98d.js"
+  "https://danobot.github.io/notorious-landing/precache-manifest.29c1adf8afb1a1fe534c7250315c166d.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "https://danobot.github.io/notorious-landing/static/css/main.d8d384fb.chunk.css",
-    "main.js": "https://danobot.github.io/notorious-landing/static/js/main.9fc7d7ab.chunk.js",
-    "main.js.map": "https://danobot.github.io/notorious-landing/static/js/main.9fc7d7ab.chunk.js.map",
+    "main.js": "https://danobot.github.io/notorious-landing/static/js/main.4515206c.chunk.js",
+    "main.js.map": "https://danobot.github.io/notorious-landing/static/js/main.4515206c.chunk.js.map",
     "runtime-main.js": "https://danobot.github.io/notorious-landing/static/js/runtime-main.43ef76e7.js",
     "runtime-main.js.map": "https://danobot.github.io/notorious-landing/static/js/runtime-main.43ef76e7.js.map",
-    "static/js/2.0169c4c7.chunk.js": "https://danobot.github.io/notorious-landing/static/js/2.0169c4c7.chunk.js",
-    "static/js/2.0169c4c7.chunk.js.map": "https://danobot.github.io/notorious-landing/static/js/2.0169c4c7.chunk.js.map",
+    "static/js/2.36e07ddc.chunk.js": "https://danobot.github.io/notorious-landing/static/js/2.36e07ddc.chunk.js",
+    "static/js/2.36e07ddc.chunk.js.map": "https://danobot.github.io/notorious-landing/static/js/2.36e07ddc.chunk.js.map",
     "index.html": "https://danobot.github.io/notorious-landing/index.html",
-    "precache-manifest.597d890f5a891c1b8525a01058bcb98d.js": "https://danobot.github.io/notorious-landing/precache-manifest.597d890f5a891c1b8525a01058bcb98d.js",
+    "precache-manifest.29c1adf8afb1a1fe534c7250315c166d.js": "https://danobot.github.io/notorious-landing/precache-manifest.29c1adf8afb1a1fe534c7250315c166d.js",
     "service-worker.js": "https://danobot.github.io/notorious-landing/service-worker.js",
     "static/css/main.d8d384fb.chunk.css.map": "https://danobot.github.io/notorious-landing/static/css/main.d8d384fb.chunk.css.map",
-    "static/js/2.0169c4c7.chunk.js.LICENSE.txt": "https://danobot.github.io/notorious-landing/static/js/2.0169c4c7.chunk.js.LICENSE.txt",
+    "static/js/2.36e07ddc.chunk.js.LICENSE.txt": "https://danobot.github.io/notorious-landing/static/js/2.36e07ddc.chunk.js.LICENSE.txt",
     "static/media/context_menu.png": "https://danobot.github.io/notorious-landing/static/media/context_menu.faab6208.png",
     "static/media/style.scss": "https://danobot.github.io/notorious-landing/static/media/illustration-section-02.63d0555d.svg",
     "static/media/global-search.gif": "https://danobot.github.io/notorious-landing/static/media/global-search.85dc7560.gif",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.43ef76e7.js",
-    "static/js/2.0169c4c7.chunk.js",
+    "static/js/2.36e07ddc.chunk.js",
     "static/css/main.d8d384fb.chunk.css",
-    "static/js/main.9fc7d7ab.chunk.js"
+    "static/js/main.4515206c.chunk.js"
   ]
 }
