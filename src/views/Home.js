@@ -8,12 +8,14 @@ import Tile from './../components/sections/Tile';
 import Image from '../components/elements/Image';
 import SplitItem from '../components/sections/SplitItem';
 
-import { faCoffee, faSitemap, faSave, 
+import { faSitemap, faSave, 
     faWifi,
     faSearch,
     faTag,
     faSyncAlt,
+    faCloudDownloadAlt as faDownload,
     faTrashAlt,
+    faFile,
     faTrashRestoreAlt,
     faServer,
     faSmile,
@@ -49,11 +51,12 @@ const Home = () => {
       <CenterImage tagline="Global Search" title={<p>Answers only a keyword away</p>} body="Find what you are looking for when you cannot remember where you saved it. With global search and tagging you can find anything based on keywords." className="illustration-section-02" image={require("./../assets/gifs/global-search.gif")} />
       <FeaturesTiles tiles={[
         <Tile title="Instant Sync" body="Access your ideas from any device. Instant sync makes sure you have the latest version on you at all times." icon={faSyncAlt} />,
-        <Tile title="Notebooks are just notes" body="Mind blown? Notebooks are simply notes with children. Any note can be promoted and demoted or pinned to the side menu for quick access." icon={faCoffee} />,
-        <Tile title="Trash Can" body="Yes, it's a feature. No more accidental deletes, restore deleted notes with ease." icon={faTrashAlt} />,
+        <Tile title="Notebooks are just notes" body="Mind blown? Notebooks are simply notes with subnotes. Any note can be promoted and demoted or pinned to the side menu for quick access." icon={faFile} />,
+        <Tile title="Trash Can" body="Yes, it's a feature. No more accidental deletes - restore deleted notes with ease." icon={faTrashAlt} />,
+        <Tile title="Automatic Updates" body="We will download updates in the background and apply them when you close the app. The most transparent update experience ever™" icon={faDownload} />,
         <Tile title="Built in Backups" body="Notorious saves as you type and replicates changes back to your server." icon={faTrashRestoreAlt} />,
-        <Tile title="Self Hosted Backend" body="Own your data" icon={faServer} />,
-        <Tile title="Open Source Project" body="Built by the community." icon={faBoxOpen} />,
+        <Tile title="Self Hosted Backend" body="Own your data and keep it private." icon={faServer} />,
+        <Tile title="Open Source Project" body="Built by the community. Free forever - and not in the social media kind of way..." icon={faBoxOpen} />,
         <Tile title="GPL-v3" body="Open License. Be nice, contribute, enjoy." icon={faSmile} />,
       ]}
         sectionHeader={ {
@@ -66,7 +69,7 @@ const Home = () => {
         <SplitItem 
         title= "Notebook search" 
         tagline="Edit with ease" 
-        body="You can easily search within an open notebooks and favourite any note for fast access later." 
+        body="You can easily search within an open notebook and favourite notes for fast access later." 
         image={<Image
           src={require('./../assets/gifs/search-and-favourite.gif')}
           alt="Markdown Editor"
