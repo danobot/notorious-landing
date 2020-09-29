@@ -1,0 +1,42 @@
+name: Generate and commit landing page
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Cache
+        id: cache-npm
+        uses: actions/cache@v2.1.1
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-cache-${{ hashFiles('**/package.json') }}
+      - name: Fetch Dependencies
+        if: steps.cache-npm.outputs.cache-hit != 'true'
+        run: |
+          npm install
+      
+      - name: Build
+        run: |
+          rm -rf docs
+          npm run build
+          mv build docs
+        env:
+          PUBLIC_URL: https://danobot.github.io/notorious-landing
+      - name: Git Commit and Push
+        uses: github-actions-x/commit@v2.6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "ci: commit the generated documentation to /docs"
+          # Force add files, useful for adding ignored files.
+          force-add: # optional, default is false
+          files: docs/*
+          name: GitHub Action
+          email: action@github.com 
+
+
